@@ -5,9 +5,7 @@ import { LeadForm } from "./lead-form"
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  CarouselItem
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import { useRef } from "react"

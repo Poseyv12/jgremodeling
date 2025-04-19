@@ -7,7 +7,7 @@ export function AboutSection() {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold text-blue-900 mb-4">About J.G. Remodeling</h2>
           <p className="text-lg text-gray-600 mb-6">
-            Jeff Grossman, president of JG Remodeling and Construction, has been recognized as one of South Florida's 
+            Jeff Grossman, president of JG Remodeling and Construction, has been recognized as one of South Florida&apos;s 
             most innovative contractors. With over 25 years of experience and a business degree from the University of Miami, 
             our company has evolved from specializing in kitchen and bathroom designs to managing comprehensive home renovations.
           </p>

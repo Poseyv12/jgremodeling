@@ -7,7 +7,7 @@ export function CTASection() {
       <div className="container mx-auto px-4 md:px-8 text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Space?</h2>
         <p className="text-lg text-blue-100 mb-8">
-          Contact us today for a complimentary consultation and let's bring your vision to life.
+          Contact us today for a complimentary consultation and let&apos;s bring your vision to life.
         </p>
         <div className="flex justify-center gap-4">
           <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50">
