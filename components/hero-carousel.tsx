@@ -1,0 +1,94 @@
+'use client'
+
+import Image from "next/image"
+import { LeadForm } from "./lead-form"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
+import { useRef } from "react"
+
+const images = [
+  {
+    src: "https://images.unsplash.com/photo-1658280911730-467b4764c09c?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Luxury Kitchen Remodel",
+    title: "Transform Your Kitchen",
+    description: "Custom designs that blend luxury with functionality"
+  },
+  {
+    src: "/project-1.jpg",
+    alt: "Modern Bathroom Design",
+    title: "Luxury Bathroom Renovations",
+    description: "Create your perfect spa-like retreat"
+  },
+  {
+    src: "/project-2.jpg",
+    alt: "Custom Home Renovation",
+    title: "Complete Home Remodeling",
+    description: "Transforming homes in South Florida for over 25 years"
+  },
+  {
+    src: "/interior-1.avif",
+    alt: "Interior Remodeling",
+    title: "Expert Interior Design",
+    description: "Award-winning craftsmanship and attention to detail"
+  }
+]
+
+export function HeroCarousel() {
+  const plugin = useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  )
+
+  return (
+    <section className="relative">
+      <Carousel
+        opts={{
+          loop: true,
+        }}
+        plugins={[plugin.current]}
+        className="w-full"
+      >
+        <CarouselContent>
+          {images.map((image, index) => (
+            <CarouselItem key={index}>
+              <div className="relative h-[500px] w-full">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover brightness-[0.85]"
+                  priority={index === 0}
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
+                <div className="absolute inset-0 flex items-center">
+                  <div className="container mx-auto px-4 md:px-8">
+                    <div className="max-w-lg text-white">
+                      <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+                        {image.title}
+                      </h1>
+                      <p className="text-lg md:text-xl text-gray-100">
+                        {image.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+
+      {/* Fixed Lead Form */}
+      <div className="absolute top-1/2 -translate-y-1/2 right-0 hidden md:block">
+        <div className="w-[350px] mr-4 lg:mr-16 xl:mr-32">
+          <LeadForm />
+        </div>
+      </div>
+    </section>
+  )
+} 
