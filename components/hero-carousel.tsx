@@ -7,7 +7,7 @@ import {
   CarouselItem
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
-import { useRef, useEffect } from "react"
+import { useRef, useEffect, useState } from "react"
 
 const images = [
   {
@@ -37,6 +37,7 @@ const images = [
 ]
 
 export function HeroCarousel() {
+  const [height, setHeight] = useState('100vh')
   const autoplayRef = useRef(
     Autoplay({
       delay: 5000,
@@ -46,8 +47,21 @@ export function HeroCarousel() {
     })
   )
 
+  useEffect(() => {
+    // Set initial height
+    setHeight(`${window.innerHeight}px`)
+
+    // Update height on resize
+    const updateHeight = () => {
+      setHeight(`${window.innerHeight}px`)
+    }
+
+    window.addEventListener('resize', updateHeight)
+    return () => window.removeEventListener('resize', updateHeight)
+  }, [])
+
   return (
-    <section className="relative w-full h-[100dvh] overflow-hidden">
+    <section className="relative w-full overflow-hidden" style={{ height }}>
       <Carousel
         opts={{
           loop: true,
@@ -60,7 +74,7 @@ export function HeroCarousel() {
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="relative w-full h-[100dvh]">
+              <div className="relative w-full h-full">
                 <Image
                   src={image.src}
                   alt={image.alt}
