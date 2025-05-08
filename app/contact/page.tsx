@@ -2,7 +2,7 @@ import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Metadata } from "next";
 import { ContactForm } from "../../components/contact-form";
-
+import { optimusPrinceps } from "@/app/fonts/optimus-princeps";
 export const metadata: Metadata = {
   title: 'Contact Us | J.G. Remodeling and Construction',
   description: 'Contact J.G. Remodeling and Construction for a complimentary consultation. We serve Boca Raton, FL and the surrounding areas.',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <Navigation />
+      <Navigation optimusClass={optimusPrinceps.className} />
       <main className="flex-1">
         <div className="container mx-auto px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
