@@ -7,7 +7,7 @@ import {
   CarouselItem
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
-import { useRef } from "react"
+import { useRef, useEffect } from "react"
 
 const images = [
   {
@@ -37,8 +37,11 @@ const images = [
 ]
 
 export function HeroCarousel() {
-  const plugin = useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true })
+  const autoplayRef = useRef(
+    Autoplay({
+      delay: 5000,
+      stopOnInteraction: false
+    })
   )
 
   return (
@@ -46,8 +49,9 @@ export function HeroCarousel() {
       <Carousel
         opts={{
           loop: true,
+          align: "center"
         }}
-        plugins={[plugin.current]}
+        plugins={[autoplayRef.current]}
         className="w-full h-full"
       >
         <CarouselContent>
