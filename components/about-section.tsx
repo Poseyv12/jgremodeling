@@ -22,11 +22,11 @@ export function AboutSection() {
 
           <div className="space-y-6 text-gray-700">
             <p className="text-lg leading-relaxed">
-              At JG Remodeling and Construction, we bring over 25 years of industry experience to every project, delivering top-tier home transformations with unmatched professionalism and precision. Founded by Jeff Grossman, a University of Miami business graduate and one of South Florida's most innovative contractors, our company has built a reputation for excellence, integrity, and customer satisfaction.
+              At JG Remodeling and Construction, we bring over 25 years of industry experience to every project, delivering top-tier home transformations with unmatched professionalism and precision. Founded by Jeff Grossman, a University of Miami business graduate and one of South Florida&apos;s most innovative contractors, our company has built a reputation for excellence, integrity, and customer satisfaction.
             </p>
 
             <p className="text-lg leading-relaxed">
-              What began as a boutique firm focused on kitchen and bathroom design has evolved into a full-service remodeling and construction company, managing everything from interior renovations to complete home makeovers. Whether you're upgrading a single room or reimagining your entire space, we offer personalized service, modern solutions, and flawless execution—on time and on budget.
+              What began as a boutique firm focused on kitchen and bathroom design has evolved into a full-service remodeling and construction company, managing everything from interior renovations to complete home makeovers. Whether you&apos;re upgrading a single room or reimagining your entire space, we offer personalized service, modern solutions, and flawless execution—on time and on budget.
             </p>
 
             <div className="mt-12">
@@ -56,7 +56,7 @@ export function AboutSection() {
             </div>
 
             <p className="text-lg leading-relaxed mt-8">
-              At JG Remodeling and Construction, your home is more than a project—it's our passion. Let us help you turn your ideas into a space that truly reflects your lifestyle and taste.
+              At JG Remodeling and Construction, your home is more than a project—it&apos;s our passion. Let us help you turn your ideas into a space that truly reflects your lifestyle and taste.
             </p>
 
             <div className="mt-12 text-center">
