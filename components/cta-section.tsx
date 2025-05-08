@@ -14,9 +14,11 @@ export function CTASection() {
             <PhoneCall className="mr-2 h-5 w-5" />
             (561) 998-7711
           </Button>
-          <Button size="lg" variant="outline" className="border-white text-black hover:bg-white/10">
-            <Mail className="mr-2 h-5 w-5" />
-            Contact Us
+          <Button size="lg" variant="outline" className="border-white text-black hover:bg-white hover:text-blue-800" asChild>
+            <a href="/contact">
+              <Mail className="mr-2 h-5 w-5" />
+              Contact Us
+            </a>
           </Button>
         </div>
       </div>

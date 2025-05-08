@@ -1,7 +1,6 @@
 'use client'
 
 import Image from "next/image"
-import { LeadForm } from "./lead-form"
 import {
   Carousel,
   CarouselContent,
@@ -43,18 +42,18 @@ export function HeroCarousel() {
   )
 
   return (
-    <section className="relative">
+    <section className="relative h-screen">
       <Carousel
         opts={{
           loop: true,
         }}
         plugins={[plugin.current]}
-        className="w-full"
+        className="w-full h-full"
       >
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-[500px] w-full">
+              <div className="relative h-screen w-full">
                 <Image
                   src={image.src}
                   alt={image.alt}
@@ -82,11 +81,11 @@ export function HeroCarousel() {
       </Carousel>
 
       {/* Fixed Lead Form */}
-      <div className="absolute top-1/2 -translate-y-1/2 right-0 hidden md:block">
+      {/* <div className="absolute top-1/2 -translate-y-1/2 right-0 hidden md:block">
         <div className="w-[350px] mr-4 lg:mr-16 xl:mr-32">
           <LeadForm />
         </div>
-      </div>
+      </div> */}
     </section>
   )
 } 

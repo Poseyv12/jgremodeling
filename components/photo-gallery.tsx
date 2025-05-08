@@ -71,7 +71,7 @@ export function PhotoGallery() {
   const [selectedPhoto, setSelectedPhoto] = useState<number | null>(null)
 
   return (
-    <div className="w-full">
+    <div className="w-full" id="gallery">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
         {photos.map((photo, index) => (
           <div 
