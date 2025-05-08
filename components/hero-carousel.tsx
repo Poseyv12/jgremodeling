@@ -40,16 +40,19 @@ export function HeroCarousel() {
   const autoplayRef = useRef(
     Autoplay({
       delay: 5000,
-      stopOnInteraction: false
+      stopOnInteraction: false,
+      stopOnMouseEnter: false,
+      stopOnFocusIn: false
     })
   )
 
   return (
-    <section className="relative w-full">
+    <section className="relative w-full h-[100dvh] overflow-hidden">
       <Carousel
         opts={{
           loop: true,
-          align: "center"
+          align: "center",
+          containScroll: "trimSnaps"
         }}
         plugins={[autoplayRef.current]}
         className="w-full h-full"
@@ -57,7 +60,7 @@ export function HeroCarousel() {
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="relative w-full" style={{ height: '100dvh' }}>
+              <div className="relative w-full h-[100dvh]">
                 <Image
                   src={image.src}
                   alt={image.alt}
