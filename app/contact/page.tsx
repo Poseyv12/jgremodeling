@@ -18,7 +18,7 @@ export default function ContactPage() {
             {/* Left Column - Form */}
             <div>
               <div className="text-left bg-white p-8 rounded-2xl shadow-sm">
-                <h1 className="text-5xl font-bold tracking-tight text-foreground sm:text-6xl bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+                <h1 className="text-5xl font-bold tracking-tight text-black sm:text-6xl bg-gradient-to-r from-primary to-primary/80 bg-clip-text">
                   Contact Us
                 </h1>
                 <p className="mt-6 text-xl text-muted-foreground leading-relaxed">

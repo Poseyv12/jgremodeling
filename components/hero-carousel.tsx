@@ -72,7 +72,7 @@ export function HeroCarousel() {
                   </p>
                   <Link 
                     href="/contact" 
-                    className="inline-block bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors duration-200"
+                    className="inline-block bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 hover:text-white transition-colors duration-200"
                   >
                     Get a Complimentary Consultation
                   </Link>
