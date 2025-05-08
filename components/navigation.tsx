@@ -26,12 +26,12 @@ export function Navigation({ optimusClass }: NavigationProps) {
       } text-white`}>
         <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
           <div className="flex items-center gap-2">
-            <div className={`${optimusClass} lg:text-xl md:text-2xl sm:text-3xl`}>
+            <div className={`${optimusClass} text-[13px] sm:text-xl md:text-2xl lg:text-3xl`}>
               J.G. Remodeling
-              <div className={`${optimusClass} lg:text-xl sm:text-3xl md:text-2xl`}>
+              <div className={`${optimusClass} text-[12px] sm:text-xl md:text-2xl lg:text-3xl`}>
                 & Construction</div>
             </div>
-            <div className="sm:block text-[10px] ml-2">
+            <div className="sm:block text-[8px] ml-2 max-w-[120px] text-center sm:max-w-none">
               Jeff Grossman Certified Residential Contractor
               <div>License # CRC058526</div>
             </div>
