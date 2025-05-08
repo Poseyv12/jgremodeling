@@ -45,7 +45,7 @@ export function HeroCarousel() {
   )
 
   return (
-    <section className="relative w-full" style={{ height: '100dvh' }}>
+    <section className="relative w-full">
       <Carousel
         opts={{
           loop: true,
