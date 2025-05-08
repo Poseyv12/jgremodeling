@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Navigation } from "@/components/navigation"
+import { optimusPrinceps } from './fonts/optimus-princeps'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body className={`${inter.className} min-h-screen antialiased`}>
-        <Navigation />
+        <Navigation optimusClass={optimusPrinceps.className} />
         <div className="min-h-screen pt-16">
           {children}
         </div>

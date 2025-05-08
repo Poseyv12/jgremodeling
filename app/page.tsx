@@ -7,7 +7,7 @@ import { ServicesSection } from "@/components/services-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 import { Metadata } from "next"
-
+import { optimusPrinceps } from "@/app/fonts/optimus-princeps"
 export const metadata: Metadata = {
   title: 'J.G. Remodeling and Construction',
   description: 'J.G. Remodeling and Construction is a leading home remodeling company in Boca Raton, FL. We specialize in kitchen and bathroom renovations, as well as complete home remodeling services.',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navigation />
+      <Navigation optimusClass={optimusPrinceps.className} />
       <main className="flex-1">
         <HeroCarousel />
         <ServicesSection />

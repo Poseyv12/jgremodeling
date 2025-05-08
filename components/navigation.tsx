@@ -2,7 +2,11 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
-export function Navigation() {
+interface NavigationProps {
+  optimusClass: string
+}
+
+export function Navigation({ optimusClass }: NavigationProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -22,10 +26,10 @@ export function Navigation() {
       } text-white`}>
         <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
           <div className="flex items-center gap-2">
-            <div className="font-serif lg:text-xl md:text-2xl  sm:text-3xl">
+            <div className={`${optimusClass} lg:text-xl md:text-2xl sm:text-3xl`}>
               J.G. Remodeling
-              <div className="font-serif lg:text-xl sm:text-3xl md:text-2xl">
-                & Construction, Inc.</div>
+              <div className={`${optimusClass} lg:text-xl sm:text-3xl md:text-2xl`}>
+                & Construction</div>
             </div>
             <div className="sm:block text-[10px] ml-2">
               Jeff Grossman Certified Residential Contractor
