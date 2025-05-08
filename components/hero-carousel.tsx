@@ -5,25 +5,25 @@ import { useState, useEffect } from "react"
 
 const images = [
   {
-    src: "/hero-bg.jpg",
+    src: "/hero-kitchen.jpeg",
     alt: "Luxury Kitchen Remodel",
     title: "Transform Your Kitchen",
     description: "Custom designs that blend luxury with functionality"
   },
   {
-    src: "/project-1.jpg",
+    src: "/hero-bath.jpeg",
     alt: "Modern Bathroom Design",
     title: "Luxury Bathroom Renovations",
     description: "Create your perfect spa-like retreat"
   },
   {
-    src: "/project-2.jpg",
+    src: "/hero-reno.webp",
     alt: "Custom Home Renovation",
     title: "Complete Home Remodeling",
     description: "Transforming homes in South Florida for over 25 years"
   },
   {
-    src: "/interior-1.avif",
+    src: "/hero-interior.jpeg",
     alt: "Interior Remodeling",
     title: "Expert Interior Design",
     description: "Award-winning craftsmanship and attention to detail"
