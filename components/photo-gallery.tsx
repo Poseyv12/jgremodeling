@@ -5,12 +5,12 @@ import { useState } from "react"
 
 const photos = [
   {
-    src: "/project-1.jpg",
+    src: "/image-gallery/gallery-kitchen.jpeg",
     alt: "Luxury Kitchen Remodel",
     category: "Kitchen"
   },
   {
-    src: "/project-1.jpg",
+    src: "/image-gallery/gallery-bath.jpeg",
     alt: "Modern Bathroom Design",
     category: "Bathroom"
   },
@@ -25,7 +25,7 @@ const photos = [
     category: "Interior"
   },
   {
-    src: "/project-1.jpg",
+    src: "/image-gallery/gallery-kitchen2.jpeg",
     alt: "Contemporary Kitchen",
     category: "Kitchen"
   },
@@ -35,36 +35,36 @@ const photos = [
     category: "Bathroom"
   },
   // Add more photos to fill out rows
-  {
-    src: "/project-2.jpg",
-    alt: "Modern Living Room",
-    category: "Interior"
-  },
-  {
-    src: "/Master_Bedroom.webp",
-    alt: "Custom Cabinetry",
-    category: "Kitchen"
-  },
-  {
-    src: "/project-1.jpg",
-    alt: "Master Bathroom",
-    category: "Bathroom"
-  },
-  {
-    src: "/project-1.jpg",
-    alt: "Home Exterior",
-    category: "Home"
-  },
-  {
-    src: "/project-2.jpg",
-    alt: "Kitchen Design",
-    category: "Kitchen"
-  },
-  {
-    src: "/Master_Bedroom.webp",
-    alt: "Bathroom Renovation",
-    category: "Bathroom"
-  }
+  // {
+  //   src: "/project-2.jpg",
+  //   alt: "Modern Living Room",
+  //   category: "Interior"
+  // },
+  // {
+  //   src: "/Master_Bedroom.webp",
+  //   alt: "Custom Cabinetry",
+  //   category: "Kitchen"
+  // },
+  // {
+  //   src: "/project-1.jpg",
+  //   alt: "Master Bathroom",
+  //   category: "Bathroom"
+  // },
+  // {
+  //   src: "/project-1.jpg",
+  //   alt: "Home Exterior",
+  //   category: "Home"
+  // },
+  // {
+  //   src: "/project-2.jpg",
+  //   alt: "Kitchen Design",
+  //   category: "Kitchen"
+  // },
+  // {
+  //   src: "/Master_Bedroom.webp",
+  //   alt: "Bathroom Renovation",
+  //   category: "Bathroom"
+  // }
 ]
 
 export function PhotoGallery() {
@@ -72,18 +72,19 @@ export function PhotoGallery() {
 
   return (
     <div className="w-full" id="gallery">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 p-2">
         {photos.map((photo, index) => (
           <div 
             key={index} 
-            className="relative aspect-square group cursor-pointer"
+            className="relative aspect-[16/9] group cursor-pointer p-2"
             onClick={() => setSelectedPhoto(index)}
           >
             <Image
               src={photo.src}
               alt={photo.alt}
-              fill
-              className="object-cover transition-all duration-300 group-hover:brightness-75"
+              width={400}
+              height={225}
+              className="object-cover w-full h-full transition-all duration-300 group-hover:brightness-75"
             />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
               <div className="text-white text-center p-4">

@@ -18,15 +18,16 @@ export function Navigation() {
   return (
     <>
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-blue-900/80 backdrop-blur-sm' : 'bg-blue-900'
+        isScrolled ? 'bg-green-900/80 backdrop-blur-sm' : 'bg-green-900'
       } text-white`}>
-        <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8">
+        <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
           <div className="flex items-center gap-2">
-            <div className="text-2xl font-serif">
+            <div className="font-serif lg:text-xl md:text-2xl  sm:text-3xl">
               J.G. Remodeling
-              <div className="text-sm font-sans">and Construction, Inc.</div>
+              <div className="font-serif lg:text-xl sm:text-3xl md:text-2xl">
+                & Construction, Inc.</div>
             </div>
-            <div className="hidden md:block text-sm ml-4">
+            <div className="sm:block text-[10px] ml-2">
               Jeff Grossman Certified Residential Contractor
               <div>License # CRC058526</div>
             </div>
@@ -85,27 +86,27 @@ export function Navigation() {
           <nav className="flex flex-col space-y-4">
             <Link 
               href="/" 
-              className="text-lg font-medium hover:text-blue-200"
+              className="text-lg font-medium hover:text-green-400"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link 
               href="#gallery" 
-              className="text-lg font-medium hover:text-blue-200"
+                className="text-lg font-medium hover:text-green-400"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Gallery
             </Link>
             <Link 
               href="/contact" 
-              className="text-lg font-medium hover:text-blue-200"
+              className="text-lg font-medium hover:text-green-400"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact Us
             </Link>
           </nav>
-          <div className="pt-4 border-t text-center border-blue-800">
+          <div className="pt-4 border-t text-center border-green-800">
             <div className="text-sm">Phone:</div>
             <div className="font-bold text-lg">(561) 998-7711</div>
           </div>

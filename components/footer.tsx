@@ -3,7 +3,7 @@ import { PhoneCall, Mail } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="border-t py-8 bg-blue-900">
+    <footer className="border-t py-8 bg-green-900">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-sm text-white">
@@ -20,7 +20,14 @@ export function Footer() {
             </Button>
           </div>
         </div>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="sm:block text-[10px] ml-2 text-white">
+            Jeff Grossman Certified Residential Contractor
+            <div>License # CRC058526</div>
+            </div>
+        </div>
       </div>
+      
     </footer>
   )
 } 
