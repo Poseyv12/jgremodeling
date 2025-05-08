@@ -42,7 +42,7 @@ export function HeroCarousel() {
   )
 
   return (
-    <section className="relative h-screen">
+    <section className="relative w-full" style={{ height: '100dvh' }}>
       <Carousel
         opts={{
           loop: true,
@@ -53,13 +53,14 @@ export function HeroCarousel() {
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-screen w-full">
+              <div className="relative w-full" style={{ height: '100dvh' }}>
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
                   className="object-cover brightness-[0.85]"
                   priority={index === 0}
+                  sizes="100vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
                 <div className="absolute inset-0 flex items-center">
