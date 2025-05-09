@@ -4,7 +4,7 @@ export function AboutSection() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <div className="mb-8">
               <Image 
@@ -15,21 +15,23 @@ export function AboutSection() {
                 className="mx-auto object-cover"
               />
             </div>
-            
-            <h2 className="text-4xl font-bold text-black mb-6">
-              Trusted Craftsmanship. Modern Vision. Proven Results.
-            </h2>
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <h3 className="text-xl font-bold text-black mb-6">
+              Jeff Grossman, Owner
+            </h3>
+         
+            {/* <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Image 
                 src="http://www.jgremodelingandconstruction.com/images/skin1/prism2.png" 
                 alt="Gold Coast Prism Award"
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className="object-contain"
               />
-            </div>
+            </div> */}
           </div>
-
+          <h2 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent mb-8">
+            Excellence in Every Detail
+          </h2>
           <div className="space-y-6 text-gray-700">
             <p className="text-lg leading-relaxed">
               At JG Remodeling and Construction, we bring over 25 years of industry experience to every project, delivering top-tier home transformations with unmatched professionalism and precision. Founded by Jeff Grossman, a University of Miami business graduate and one of South Florida&apos;s most innovative contractors, our company has built a reputation for excellence, integrity, and customer satisfaction.
