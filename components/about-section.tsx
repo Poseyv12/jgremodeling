@@ -16,7 +16,7 @@ export function AboutSection() {
               />
             </div>
             
-            <h2 className="text-4xl font-bold text-blue-900 mb-6">
+            <h2 className="text-4xl font-bold text-black mb-6">
               Trusted Craftsmanship. Modern Vision. Proven Results.
             </h2>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -40,26 +40,26 @@ export function AboutSection() {
             </p>
 
             <div className="mt-12">
-              <h3 className="text-2xl font-semibold text-blue-900 mb-6">Why Homeowners Choose Us:</h3>
+              <h3 className="text-2xl font-semibold text-black mb-6">Why Homeowners Choose Us:</h3>
               <ul className="space-y-3 text-lg">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-black mr-2">•</span>
                   Decades of hands-on experience in residential remodeling
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-black mr-2">•</span>
                   Expertise in both classic and contemporary design trends
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-black mr-2">•</span>
                   Licensed, insured, and committed to high standards
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-black mr-2">•</span>
                   Transparent communication from start to finish
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
+                  <span className="text-black mr-2">•</span>
                   Tailored renovation plans to suit your unique vision
                 </li>
               </ul>
@@ -70,7 +70,7 @@ export function AboutSection() {
             </p>
 
             <div className="mt-12 text-center">
-              <h3 className="text-2xl font-semibold text-blue-900 mb-4">Ready to transform your home?</h3>
+              <h3 className="text-2xl font-semibold text-black mb-4">Ready to transform your home?</h3>
               <p className="text-lg text-gray-700">
                 Contact us today for a free consultation and discover the JG difference.
               </p>

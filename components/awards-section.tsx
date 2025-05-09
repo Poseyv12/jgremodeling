@@ -2,15 +2,15 @@ import { Star } from "lucide-react"
 
 export function AwardsSection() {
   return (
-    <section className="py-12 bg-blue-50">
+    <section className="py-12 bg-green-50">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="text-center">
-            <div className="text-4xl font-bold text-blue-900 mb-2">25+</div>
+            <div className="text-4xl font-bold text-black mb-2">25+</div>
             <div className="text-gray-600">Years of Excellence</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-blue-900 mb-2">500+</div>
+            <div className="text-4xl font-bold text-black mb-2">500+</div>
             <div className="text-gray-600">Projects Completed</div>
           </div>
           <div className="text-center">
