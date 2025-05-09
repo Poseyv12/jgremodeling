@@ -47,8 +47,8 @@ export function HeroCarousel() {
       {images.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentIndex ? 'opacity-100' : 'opacity-0'
+          className={`absolute inset-0 transition-all duration-1000 ${
+            index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
           }`}
         >
           <div className="relative w-full h-full">
@@ -63,16 +63,16 @@ export function HeroCarousel() {
             <div className="absolute inset-0 bg-black/30" />
             <div className="absolute inset-0 flex items-center">
               <div className="container mx-auto px-4">
-                <div className="max-w-lg text-white text-center md:text-left mx-auto md:mx-0">
-                  <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                <div className="max-w-2xl text-white text-center md:text-left mx-auto md:mx-0">
+                  <h1 className="text-4xl md:text-5xl font-bold mb-4 max-w-xl">
                     {image.title}
                   </h1>
-                  <p className="text-lg md:text-xl mb-8">
+                  <p className="text-lg md:text-xl mb-8 max-w-xl">
                     {image.description}
                   </p>
                   <Link 
-                    href="/contact" 
-                    className="inline-block bg-white/70 text-black px-4 py-4 rounded-sm text-lg font-semibold hover:bg-gray-800 hover:text-white transition-colors duration-200"
+                    href="/contact"
+                    className="inline-block bg-white/70 text-black px-4 py-4 rounded-sm text-lg font-semibold hover:bg-white/90 hover:text-black transition-colors duration-200"
                   >
                     Get a Complimentary Consultation
                   </Link>
