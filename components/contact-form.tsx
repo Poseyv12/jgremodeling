@@ -48,7 +48,7 @@ export function ContactForm() {
             type="text"
             id="name"
             {...register('name', { required: 'Name is required' })}
-            className="mt-1 block w-full rounded-xl border-input bg-background px-4 py-3 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all duration-200"
+            className="mt-1 block ring-1 ring-border/50 w-full rounded-xl border-input bg-background px-4 py-3 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all duration-200"
             placeholder="Your name"
           />
           {errors.name && (
@@ -70,7 +70,7 @@ export function ContactForm() {
                 message: 'Invalid email address',
               },
             })}
-            className="mt-1 block w-full rounded-xl border-input bg-background px-4 py-3 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all duration-200"
+            className="mt-1 block ring-1 ring-border/50 w-full rounded-xl border-input bg-background px-4 py-3 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all duration-200"
             placeholder="your.email@example.com"
           />
           {errors.email && (
@@ -86,7 +86,7 @@ export function ContactForm() {
             id="message"
             rows={5}
             {...register('message', { required: 'Message is required' })}
-            className="mt-1 block w-full rounded-xl border-input bg-background px-4 py-3 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all duration-200"
+            className="mt-1 block ring-1 ring-border/50 w-full rounded-xl border-input bg-background px-4 py-3 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-all duration-200"
             placeholder="Tell us about your project..."
           />
           {errors.message && (

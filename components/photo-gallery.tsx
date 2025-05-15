@@ -87,13 +87,13 @@ export function PhotoGallery({ photos = defaultPhotos }: PhotoGalleryProps) {
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
           onClick={() => setSelectedPhoto(null)}
         >
-          <div className="relative w-full max-w-4xl mx-4">
+          <div className="relative w-full max-w-4xl mx-4 max-h-[90vh] flex items-center">
             <Image
               src={validPhotos[selectedPhoto].src}
               alt={validPhotos[selectedPhoto].alt || "Project image"}
               width={1200}
               height={800}
-              className="w-full h-auto"
+              className="w-full h-auto max-h-[85vh] object-contain"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 flex justify-between items-center">
               <div>

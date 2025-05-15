@@ -24,16 +24,18 @@ export function Navigation({ optimusClass }: NavigationProps) {
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-green-900/80 backdrop-blur-sm' : 'bg-green-900'
       } text-white`}>
-        <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
+        <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-8">
           <div className="flex items-center gap-2">
-            <div className={`${optimusClass} text-[13px] sm:text-xl md:text-2xl lg:text-3xl`}>
-              J.G. Remodeling
-              <div className={`${optimusClass} text-[12px] sm:text-xl md:text-2xl lg:text-3xl`}>
-                & Construction</div>
-            </div>
-            <div className="sm:block text-[8px] ml-2 max-w-[120px] text-center sm:max-w-none">
-              Jeff Grossman Certified Residential Contractor
-              <div>License # CRC058526</div>
+            <div className="flex flex-col items-center">
+              <div className={`${optimusClass} text-[11px] sm:text-lg md:text-xl lg:text-2xl`}>
+                J.G. Remodeling
+                <div className={`${optimusClass} text-[10px] sm:text-lg md:text-xl lg:text-2xl`}>
+                  & Construction</div>
+              </div>
+              <div className="text-[6px] text-center sm:text-[8px] mt-0.5">
+                Jeff Grossman Certified Residential Contractor
+                <div>License # CRC058526</div>
+              </div>
             </div>
           </div>
           <nav className="hidden md:flex gap-6">
@@ -44,7 +46,7 @@ export function Navigation({ optimusClass }: NavigationProps) {
           <div className="flex items-center gap-4">
             <div className="text-right hidden md:block">
               <div className="text-sm">Phone:</div>
-              <div className="font-bold">(561) 998-7711</div>
+              <a href="tel:5619987711" className="font-bold hover:text-green-100 transition-colors">(561) 998-7711</a>
             </div>
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
