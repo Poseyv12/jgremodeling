@@ -9,6 +9,10 @@ const nextConfig = {
       {
         protocol: 'http',
         hostname: 'www.jgremodelingandconstruction.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.sanity.io',
       }
     ],
   },

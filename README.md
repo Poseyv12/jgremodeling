@@ -20,6 +20,23 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Sanity Studio Integration
+
+This project uses Sanity Studio for content management. To connect to your Sanity Studio:
+
+1. Create a `.env.local` file in the root directory with the following variables:
+
+```
+# Sanity Configuration
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+NEXT_PUBLIC_SANITY_DATASET=production
+SANITY_API_TOKEN=your_api_token
+```
+
+2. Make sure your Sanity Studio schema contains the `jgProject` document type with all required fields.
+
+3. After adding content in Sanity Studio, it will automatically appear in your Next.js app.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

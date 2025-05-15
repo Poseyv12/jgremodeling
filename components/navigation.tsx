@@ -38,7 +38,7 @@ export function Navigation({ optimusClass }: NavigationProps) {
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="font-medium">Home</Link>
-            <Link href="#gallery" className="font-medium">Gallery</Link>
+            <Link href="/gallery" className="font-medium">Gallery</Link>
             <Link href="/contact" className="font-medium">Contact Us</Link>
           </nav>
           <div className="flex items-center gap-4">
@@ -96,8 +96,8 @@ export function Navigation({ optimusClass }: NavigationProps) {
               Home
             </Link>
             <Link 
-              href="#gallery" 
-                className="text-lg font-medium hover:text-green-400"
+              href="/gallery" 
+              className="text-lg font-medium hover:text-green-400"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Gallery
