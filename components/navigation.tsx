@@ -25,14 +25,20 @@ export function Navigation({ optimusClass }: NavigationProps) {
         isScrolled ? 'bg-green-900/80 backdrop-blur-sm' : 'bg-green-900'
       } text-white`}>
         <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-8">
-          <div className="flex items-center gap-2">
-            <div className="flex flex-col items-center">
-              <div className={`${optimusClass} text-[11px] sm:text-lg md:text-xl lg:text-2xl`}>
-                J.G. Remodeling
-                <div className={`${optimusClass} text-[10px] sm:text-lg md:text-xl lg:text-2xl`}>
-                  & Construction</div>
+          <div className="flex items-center gap-2 w-full md:w-auto">
+            <div className="flex flex-col items-start mx-0">
+              <div className="flex flex-row items-center">
+                <div className={`${optimusClass} text-[20px] sm:text-lg md:text-xl lg:text-2xl text-left`}>
+                  J.G. Remodeling
+                  <div className={`${optimusClass} text-[20px] sm:text-lg md:text-xl lg:text-2xl`}>
+                    & Construction</div>
+                </div>
+                <div className="text-[8px] ml-6 text-center sm:text-[8px] max-w-[100px] md:hidden">
+                  Jeff Grossman Certified Residential Contractor
+                  <div>License # CRC058526</div>
+                </div>
               </div>
-              <div className="text-[6px] text-center sm:text-[8px] mt-0.5">
+              <div className="text-[6px] text-center sm:text-[8px] mt-0.5 hidden md:block">
                 Jeff Grossman Certified Residential Contractor
                 <div>License # CRC058526</div>
               </div>
@@ -50,7 +56,7 @@ export function Navigation({ optimusClass }: NavigationProps) {
             </div>
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2"
+              className="md:hidden p-2 absolute right-4"
               aria-label="Toggle menu"
             >
               <div className="w-6 h-5 flex flex-col justify-between">
